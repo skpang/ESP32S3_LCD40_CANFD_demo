@@ -36,7 +36,11 @@ void canReceiver() {
   if(ESP32Can.readFrame(rxFrame, 0)) { // 1000 is the timeout value
     // Communicate that a packet was recieved
     sprintf(buff,"%02X",rxFrame.identifier);
-    can2_data = String("ID: ") +buff + String(" Len: ") +  rxFrame.data_length_code + " Data: ";
+    lv_label_set_text(uic_ccCANID, buff);
+    sprintf(buff,"%d",rxFrame.data_length_code);
+    lv_label_set_text(uic_ccCANlen, buff);
+
+    can2_data = " ";
     Serial.printf("Classic CAN received ID: %03X Len:%d  Data: ", rxFrame.identifier,rxFrame.data_length_code);
 
     // Communicate packet information

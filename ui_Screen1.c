@@ -307,10 +307,11 @@ lv_label_set_text(ui_Label11,"ID :");
 ui_ccCANID = lv_label_create(ui_Screen1);
 lv_obj_set_width( ui_ccCANID, LV_SIZE_CONTENT);  /// 1
 lv_obj_set_height( ui_ccCANID, LV_SIZE_CONTENT);   /// 1
-lv_obj_set_x( ui_ccCANID, -188 );
-lv_obj_set_y( ui_ccCANID, -17 );
-lv_obj_set_align( ui_ccCANID, LV_ALIGN_CENTER );
+lv_obj_set_x( ui_ccCANID, 52 );
+lv_obj_set_y( ui_ccCANID, -18 );
+lv_obj_set_align( ui_ccCANID, LV_ALIGN_LEFT_MID );
 lv_label_set_text(ui_ccCANID,"8");
+lv_obj_set_style_text_align(ui_ccCANID, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN| LV_STATE_DEFAULT);
 
 ui_Label13 = lv_label_create(ui_Screen1);
 lv_obj_set_width( ui_Label13, LV_SIZE_CONTENT);  /// 1
