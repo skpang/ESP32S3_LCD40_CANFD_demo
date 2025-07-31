@@ -7,4 +7,4 @@ Ensure these libraries are installed:
 https://github.com/pierremolinaro/acan2517FD
 https://github.com/handmade0octopus/ESP32-TWAI-CAN
 
-
+Move the lv_conf.h file to your /libraries folder._
